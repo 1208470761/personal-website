@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./stylesheet/bootstrap.min.css">
+    <link rel="stylesheet" href="./stylesheet/style.css">
+    <link rel="shortcut icon" href="./icon.png" type="image/x-icon">
+    <title>一个破网站</title>
+</head>
+
+<body class="color-black">
+    <div class="fixed-box">
+        <div class="light-theme"></div>
+        <div class="dark-theme"></div>
+        <a class="fixed-button" href="#">^</a>
+    </div>
+    <!-- header头部 -->
+    <header id="header">
+        <!-- 顶部导航 -->
+        <div class="top-bar d-none d-lg-block text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="top-bar-1 col-md-4">
+                        <a href="#">
+                            <span>WeChat</span>
+                            <img src="./img/qrcode.jpg" class="qrcode">
+                        </a>
+                    </div>
+                    <div class="top-bar-2 col-md-5">
+                        <i></i>
+                        <a href="http://mail.qq.com" target="_blank">email : 1208470761@qq.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 顶部logo区导航 -->
+        <nav class="navbar navbar-expand-lg navbar-light nav-main">
+            <div class="container">
+                <!-- logo -->
+                <a class="navbar-brand" href="./posterLink.html"  target="_blank">
+                    <img src="./img/logo.png" alt="#">
+                </a>
+                <!-- 导航主体 -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#user" tabindex="-1" aria-disabled="true">User</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#details" tabindex="-1" aria-disabled="true">Details</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#friendly-link" tabindex="-1" aria-disabled="true">Friendly
+                                Link</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#page-bottom" tabindex="-1" aria-disabled="true">Bottom</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 轮播图 -->
+    <section id="poster" class="carousel slide" data-ride="carousel" data-interval="2000">
+        <ol class="carousel-indicators">
+            <li data-target="#poster" data-slide-to="0" class="active"></li>
+            <li data-target="#poster" data-slide-to="1"></li>
+            <li data-target="#poster" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <a class="carousel-item active" href="https://baidu.com" data-sm-img="./img/poster-small-1.png"
+                data-lg-img="./img/poster-big-1.png">
+            </a>
+
+            <a class="carousel-item" href="https://baidu.com" data-sm-img="./img/poster-small-2.png"
+                data-lg-img="./img/poster-big-2.png">
+            </a>
+
+            <a class="carousel-item" href="https://baidu.com" data-sm-img="./img/poster-small-3.png"
+                data-lg-img="./img/poster-big-3.png">
+            </a>
+        </div>
+        <a class="carousel-control-prev" href="#poster" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#poster" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </section>
+
+    <!-- main主内容 -->
+    <main id="main">
+        <!-- 热门 -->
+        <article class="hot-list" id="user">
+            <div class="text-center">
+                <h2><strong>User</strong></h2>
+            </div>
+            <div class="container">
+                <ul class="row user">
+                    <li class="media col-lg-4">
+                        <img src="./img/head-portrait1.png" alt="...">
+                        <div class="media-body">
+                            <h5>Center-aligned media</h5>
+                            <p>Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis aut eveniet ipsa dolores
+                                error totam vitae incidunt similique quos voluptate commodi consequatur voluptates iste,
+                                culpa nisi ipsum, et molestiae quisquam?</p>
+                        </div>
+                    </li>
+                    <li class="media col-lg-4">
+                        <img src="./img/head-portrait2.png" alt="...">
+                        <div class="media-body">
+                            <h5>Center-aligned media</h5>
+                            <p>Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis aut eveniet ipsa dolores
+                                error totam vitae incidunt similique quos voluptate commodi consequatur voluptates iste,
+                                culpa nisi ipsum, et molestiae quisquam?</p>
+                        </div>
+                    </li>
+                    <li class="media col-lg-4">
+                        <img src="./img/head-portrait3.png" alt="...">
+                        <div class="media-body">
+                            <h5>Center-aligned media</h5>
+                            <p>Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis aut eveniet ipsa dolores
+                                error totam vitae incidunt similique quos voluptate commodi consequatur voluptates iste,
+                                culpa nisi ipsum, et molestiae quisquam?</p>
+                        </div>
+                    </li>
+                    <li class="media col-lg-4">
+                        <img src="./img/head-portrait4.png" alt="...">
+                        <div class="media-body">
+                            <h5>Center-aligned media</h5>
+                            <p>Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis aut eveniet ipsa dolores
+                                error totam vitae incidunt similique quos voluptate commodi consequatur voluptates iste,
+                                culpa nisi ipsum, et molestiae quisquam?</p>
+                        </div>
+                    </li>
+                    <li class="media col-lg-4">
+                        <img src="./img/head-portrait5.png" alt="...">
+                        <div class="media-body">
+                            <h5>Center-aligned media</h5>
+                            <p>Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis aut eveniet ipsa dolores
+                                error totam vitae incidunt similique quos voluptate commodi consequatur voluptates iste,
+                                culpa nisi ipsum, et molestiae quisquam?</p>
+                        </div>
+                    </li>
+                    <li class="media col-lg-4">
+                        <img src="./img/head-portrait6.png" alt="...">
+                        <div class="media-body">
+                            <h5>Center-aligned media</h5>
+                            <p>Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis aut eveniet ipsa dolores
+                                error totam vitae incidunt similique quos voluptate commodi consequatur voluptates iste,
+                                culpa nisi ipsum, et molestiae quisquam?</p>
+                        </div>
+                    </li>
+                    <li class="media col-lg-4">
+                        <img src="./img/head-portrait7.png" alt="...">
+                        <div class="media-body">
+                            <h5>Center-aligned media</h5>
+                            <p>Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis aut eveniet ipsa dolores
+                                error totam vitae incidunt similique quos voluptate commodi consequatur voluptates iste,
+                                culpa nisi ipsum, et molestiae quisquam?</p>
+                        </div>
+                    </li>
+                    <li class="media col-lg-4">
+                        <img src="./img/head-portrait8.png" alt="...">
+                        <div class="media-body">
+                            <h5>Center-aligned media</h5>
+                            <p>Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis aut eveniet ipsa dolores
+                                error totam vitae incidunt similique quos voluptate commodi consequatur voluptates iste,
+                                culpa nisi ipsum, et molestiae quisquam?</p>
+                        </div>
+                    </li>
+                    <li class="media col-lg-4">
+                        <img src="./img/head-portrait9.png" alt="...">
+                        <div class="media-body">
+                            <h5>Center-aligned media</h5>
+                            <p>Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis aut eveniet ipsa dolores
+                                error totam vitae incidunt similique quos voluptate commodi consequatur voluptates iste,
+                                culpa nisi ipsum, et molestiae quisquam?</p>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </article>
+        <!-- 介绍-->
+        <article class="details" id="details">
+            <div class="container">
+                <div class="row container">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link active" id="first-tab" data-toggle="tab" href="#first" role="tab"
+                                aria-controls="first" aria-selected="true">first</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="second-tab" data-toggle="tab" href="#second" role="tab"
+                                aria-controls="second" aria-selected="false">second</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="third-tab" data-toggle="tab" href="#third" role="tab"
+                                aria-controls="third" aria-selected="false">third</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="first" role="tabpanel" aria-labelledby="first-tab">
+                            <div class="tab-main">
+                                <div class="col-md-5">
+                                    <img src="./img/card.png" alt="">
+                                </div>
+                                <div class="col-md-8 text-box">
+                                    <h1>Bohemian Rhapsody</h1>
+                                    <p>
+                                        Bohemian Rhapsody is a foot-stomping celebration of Queen, their music and their
+                                        extraordinary lead singer Freddie Mercury. Freddie defied stereotypes and
+                                        shattered convention to become one of the most beloved entertainers on the
+                                        planet. The film traces the meteoric rise of the band through their iconic songs
+                                        and revolutionary sound. They reach unparalleled success, but in an unexpected
+                                        turn Freddie, surrounded by darker influences, shuns Queen in pursuit of his
+                                        solo career. Having suffered greatly without the collaboration of Queen, Freddie
+                                        manages to reunite with his bandmates just in time for Live Aid. While bravely
+                                        facing a recent AIDS diagnosis, Freddie leads the band in one of the greatest
+                                        performances in the history of rock music. Queen cements a legacy that continues
+                                        to inspire outsiders, dreamers and music lovers to this day. Written by
+                                        Twentieth Century Fox
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="second" role="tabpanel" aria-labelledby="second-tab">
+                            <div class="tab-main">
+                                <div class="col-md-5">
+                                    <img src="./img/card2.png" alt="">
+                                </div>
+                                <div class="col-md-8 text-box">
+                                    <h1>Forrest Gump</h1>
+                                    <p>
+                                        Forrest Gump is a simple man with a low I.Q. but good intentions. He is running
+                                        through childhood with his best and only friend Jenny. His 'mama' teaches him
+                                        the ways of life and leaves him to choose his destiny. Forrest joins the army
+                                        for service in Vietnam, finding new friends called Dan and Bubba, he wins
+                                        medals, creates a famous shrimp fishing fleet, inspires people to jog, starts a
+                                        ping-pong craze, creates the smiley, writes bumper stickers and songs, donates
+                                        to people and meets the president several times. However, this is all irrelevant
+                                        to Forrest who can only think of his childhood sweetheart Jenny Curran, who has
+                                        messed up her life. Although in the end all he wants to prove is that anyone can
+                                        love anyone.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="third" role="tabpanel" aria-labelledby="third-tab">
+                            <div class="tab-main">
+                                <div class="col-md-5">
+                                    <img src="./img/card3.png" alt="">
+                                </div>
+                                <div class="col-md-8 col-lg-6 text-box">
+                                    <h1>The Fault in Our Stars</h1>
+                                    <p>
+                                        Hazel and Augustus are two teenagers who share an acerbic wit, a disdain for the
+                                        conventional, and a love that sweeps them on a journey. Their relationship is
+                                        all the more miraculous, given that Hazel's other constant companion is an
+                                        oxygen tank, Gus jokes about his prosthetic leg, and they meet and fall in love
+                                        at a cancer support group.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!-- 链接 -->
+        <article class="friendly-link" id="friendly-link">
+            <div class="container">
+                <h2>Friendly Link</h2>
+                <div class="row">
+                    <ul>
+                        <li><a href="./posterLink.html"  target="_blank">
+                                <img src="./img/head-portrait2.png" alt="">
+                            </a></li>
+                        <li><a href="./posterLink.html"  target="_blank">
+                                <img src="./img/head-portrait8.png" alt="">
+                            </a></li>
+                        <li><a href="./posterLink.html"  target="_blank">
+                                <img src="./img/head-portrait4.png" alt="">
+                            </a></li>
+                        <li><a href="./posterLink.html"  target="_blank">
+                                <img src="./img/head-portrait5.png" alt="">
+                            </a></li>
+                        <li><a href="./posterLink.html"  target="_blank">
+                                <img src="./img/head-portrait6.png" alt="">
+                            </a></li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+    </main>
+    <!-- 尾部 -->
+    <footer id="footer">
+        <div class="container" id="page-bottom">
+            <div class="row">
+                <div class="col-lg-4 slogan">
+                    <ul>
+                        <li>The test section</li>
+                        <li>The test section</li>
+                        <li>The test section</li>
+                    </ul>
+                    <ul>
+                        <li>The test section</li>
+                        <li>The test section</li>
+                        <li>The test section</li>
+                    </ul>
+                </div>
+                <div class="col-lg-5 address">
+                    <p>address：The test section</p>
+                    <p>copyright &copy;</p>
+                    <p>The test section</p>
+                </div>
+                <div class="col-lg-3 contact">
+                    <a href="./posterLink.html"  target="_blank">
+                        <img src="./img/head-portrait3.png" alt="">
+                    </a>
+                    <a href="./posterLink.html"  target="_blank">
+                        <img src="./img/head-portrait3.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/jquery.slim.min.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

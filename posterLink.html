@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet/reset.css">
+    <link rel="shortcut icon" href="./icon.png" type="image/x-icon">
+    <title>另一个破网站</title>
+    <style>
+        .poster-content {
+            width: 100%;
+            height: 100%;
+        }
+
+        .slider-content {
+            width: inherit;
+            height: inherit;
+            position: absolute;
+            opacity: 0;
+            transition: all 1s;
+        }
+
+        .active {
+            opacity: 1;
+        }
+
+        .slider-content .link-poster {
+            display: block;
+            width: inherit;
+            height: inherit;
+        }
+
+        .slider-content .link-poster img {
+            width: inherit;
+            height: inherit;
+        }
+
+        .poster-content button {
+            width: 50px;
+            height: 100px;
+            background-color: black;
+            opacity: 0.2;
+            color: white;
+            position: absolute;
+            outline: none;
+            border: none;
+            cursor: pointer;
+            transition: all 0.25s;
+        }
+
+        .poster-content button:hover {
+            opacity: 0.8;
+        }
+
+        .poster-content button:nth-of-type(1) {
+            top: 50%;
+            left: 10px;
+        }
+
+        .poster-content button:nth-of-type(2) {
+            top: 50%;
+            right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="poster-content">
+        <div class="slider-content active">
+            <a href="#" class="link-poster"><img src="./img/view1.jpg" alt="#"></a>
+        </div>
+        <div class="slider-content">
+            <a href="#" class="link-poster"><img src="./img/view2.jpg" alt="#"></a>
+        </div>
+        <div class="slider-content">
+            <a href="#" class="link-poster"><img src="./img/view3.jpg" alt="#"></a>
+        </div>
+        <button id="prev">prev</button>
+        <button id="next">next</button>
+    </div>
+    <script>
+        var slides = document.getElementsByClassName("slider-content"),
+            prev = document.getElementById("prev"),
+            next = document.getElementById("next"),
+            index = 0;
+        
+        prev.addEventListener("click", prevPoster);
+        next.addEventListener("click", nextPoster);
+        // 上一张
+        function prevPoster() {
+            slides[index].classList.remove("active");
+            if (index == 0) {
+                index = slides.length - 1;
+            } else {
+                index--;
+            }
+            slides[index].classList.add("active");
+        }
+        // 下一张
+        function nextPoster() {
+            slides[index].classList.remove("active");
+            if (index == slides.length - 1) {
+                index = 0;
+            } else {
+                index++;
+            }
+            slides[index].classList.add("active");
+        }
+        // 自动播放
+        var obj = {
+            autoplay: true,
+            interval: 2000,
+        }
+        var timer = null;
+        if (obj.autoplay == true) {
+            timer = setInterval(() => {
+                nextPoster();
+            }, obj.interval)
+        }
+        // 当悬浮在按钮上时，防止自动播放和页面跳转同时执行
+        function hover(node) {
+            node.onmouseenter = function () {
+                clearInterval(timer);
+            }
+            node.onmouseleave = function () {
+                timer = setInterval(() => {
+                    nextPoster();
+                }, obj.interval)
+            }
+        }
+        hover(prev)
+        hover(next)
+    </script>
+</body>
+
+</html>
