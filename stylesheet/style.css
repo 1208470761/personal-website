@@ -1,6 +1,11 @@
 @import "./reset.min.css";
 /* header */
-
+body{
+    transition: background 1s;
+}
+a{
+    transition: all 1s;
+}
 header .top-bar {
     height: 40px;
     line-height: 40px;
@@ -119,15 +124,16 @@ main .friendly-link ul li {
     border-radius: 50%;
     position: relative;
     box-shadow: 0 0 2px 2px white;
+    transform: rotate(0deg);
 }
 main .friendly-link ul li:hover img{
-    transform: scale(1.2);
+    transform: rotate(-360deg);
 }
 main .friendly-link ul li a {
     display: block;
 }
 main .friendly-link ul li a img {
-    transition: all 1s;
+    transition: all 0.25s;
     border-radius: 50%;
 }
 /* footer */

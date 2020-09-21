@@ -16,7 +16,7 @@ $(window)
 // 主题
 $(".dark-theme").on("click", function(){
     $("body").css({
-        backgroundColor: "black",
+        backgroundColor: "#131124",
         color: "white",
     });
     $("body a").css({
